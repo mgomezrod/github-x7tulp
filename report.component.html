@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Reporte de ventas por producto</h1>
+  <p>Este reporte muestra las ventas por producto, cliente, país, proveedor, categoría, variedad y color entre el 1 de enero de 2022 y el 30 de noviembre de 2023.</p>
+  <dx-report-viewer [reportUrl]="reportUrl" height="800px" cssClass='myViewer'>
+    <dxrv-request-options [invokeAction]="invokeAction" [host]="hostUrl"></dxrv-request-options>
+    <dxrv-export-settings [useSameTab]="false" [useAsynchronousExport]="false"></dxrv-export-settings>
+    <dxrv-search-settings [useAsyncSearch]="false"></dxrv-search-settings>
+    <dxrv-callbacks (CustomizeMenuActions)="CustomizeMenuActions($event)">
+    </dxrv-callbacks>
+  </dx-report-viewer>
+</div>

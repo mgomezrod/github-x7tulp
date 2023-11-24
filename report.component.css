@@ -1,0 +1,37 @@
+/* Estilos para el contenedor del reporte */
+.container {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para el título del reporte */
+h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Estilos para el párrafo del reporte */
+p {
+  text-align: justify;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Estilos para el componente dx-report-viewer */
+.myViewer {
+  border: 1px solid #ccc;
+}
+
+/* Estilos para el botón de imprimir */
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
